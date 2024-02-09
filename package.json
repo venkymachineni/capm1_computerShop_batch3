@@ -1,0 +1,31 @@
+{
+  "name": "capm1_computerShop_batch3",
+  "version": "0.0.1",
+  "description": "Computer Shop ",
+  "dependencies": {
+    "@sap/cds": "^6",
+    "@sap/audit-logging": "^3",
+    "@sap/hana-client": "^2",
+
+    "debug": "^4.3",
+    "express": "^4"
+  },
+  "devDependencies": {
+    "sqlite3": "5.0.0"
+  },
+  "scripts": {
+    "start": "npx cds run"
+  },
+  "cds": {
+    "requires": {
+      "db": 
+       {
+          "kind": "hana"
+        }
+    }
+    ,
+    "hana": {
+      "deploy-format": "hdbtable"
+    }
+  }
+}
